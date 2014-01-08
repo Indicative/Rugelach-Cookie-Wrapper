@@ -8,9 +8,9 @@ At Indicative, we found the $cookieStore subpar and restricting (only to session
 
 Integrating
 ===========
-To begin, download the rugelach.js file.  Inject the 'rugelach-cookie-wrap' module into your app's module.  Wherever you need to use rugelach, inject the 'rugelach' service.  Like so:
+To begin, download the rugelach.js file.  Inject the 'rugelach' module into your app's module.  Wherever you need to use rugelach, inject the 'rugelach' service.  Like so:
 
-	app.module('mapp', ['rugelach-cookie-wrap'])
+	app.module('mapp', ['rugelach'])
 		.controller('mycontroller', ['rugelach', function (rugelach){
 		//call rugelach here.
 		}])

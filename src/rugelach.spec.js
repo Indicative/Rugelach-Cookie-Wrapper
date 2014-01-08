@@ -1,7 +1,7 @@
 describe('rugelach', function(){
     var rugelach;
 
-    beforeEach(angular.mock.module('rugelach-cookie-wrap'));
+    beforeEach(angular.mock.module('rugelach'));
 
     beforeEach(inject(function(_rugelach_){
         rugelach = _rugelach_;

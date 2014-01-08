@@ -1,4 +1,4 @@
-angular.module('rugelach-cookie-wrap', [])
+angular.module('rugelach', [])
 
     .service('rugelach', function(){
 
