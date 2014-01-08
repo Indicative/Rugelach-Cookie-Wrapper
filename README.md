@@ -18,7 +18,7 @@ To begin, download the rugelach.js file.  Inject the 'rugelach' module into your
 
 Setting Cookies
 ---------------
-Setting a cookie is easy.  All you need to do is call `rugelach.setCookie(key, value, path(optional), expir(optional/date));` where the following parameters are:
+Setting a cookie is easy.  All you need to do is call `rugelach.setCookie(key, value, [path], [expir]);` where the following parameters are:
 
 * key: String - The key of the cookie key-value pair
 * value: String - The value of the cookie key-value pair
@@ -36,7 +36,7 @@ The following will work:
 
 Retrieving Cookies
 -------------------
-To retrieve a cookie call `rugelach.getCookie("mykey");` It will return either the value or undefined (if that key exprired or is unable to be found);
+To retrieve a cookie call `rugelach.getCookie("mykey");` It will return either the value or undefined (if that key expired or is unable to be found);
 
 Clearing Cookies
 ----------------
