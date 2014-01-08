@@ -40,7 +40,7 @@ To retrieve a cookie call `rugelach.getCookie("mykey");` It will return either t
 
 Clearing Cookies
 ----------------
-To clear a cookie call `rugelach.getCookie("mykey", "mypath");`.  If you did not define a path, or set the path to the root, you can call `rugelach.getCookie("mykey");` instead.
+To clear a cookie call `rugelach.clearCookie("mykey", "mypath");`.  If you did not define a path, or set the path to the root, you can call `rugelach.clearCookie("mykey");` instead.
 
 Testing
 -------
