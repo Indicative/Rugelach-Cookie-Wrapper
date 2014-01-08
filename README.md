@@ -23,7 +23,7 @@ Setting a cookie is easy.  All you need to do is call `rugelach.setCookie(key, v
 * key: String - The key of the cookie key-value pair
 * value: String - The value of the cookie key-value pair
 * path: [Optional] String - The path to store the cookie on, if not defined store cookies on root path ('/').
-* expir: [Optional] Date - Expiration date, if not defined or incorrectly defined, sets to a year from creation.
+* expir: [Optional] Date - Expiration date, if not defined or incorrectly defined, becomes a session cookie.
 
 The following will work:
 
