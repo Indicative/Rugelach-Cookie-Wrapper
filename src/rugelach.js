@@ -15,20 +15,17 @@ angular.module('rugelach', [])
                     path = "/";
                 }
 
-                //expiration 1 year later if not defined
-                //or if not defined correctly
-                if (!expir || !angular.isDate(expir)) {
-                    expir = new Date();
-                    expir.setDate(expir.getDate() + 365);
-                }
-
                 //set date to utc string
-                expir = expir.toUTCString();
+                if (expir && angular.isDate(expir)){
+                    expir = expir.toUTCString();
+                } else {
+                    expir = undefined;
+                }
 
                 document.cookie =
                     key + '="' + value + '";' +
                         ' path=' + path + ';' +
-                        ' expires=' + expir;
+                        (expir ? (' expires=' + expir) : '');
             },
 
             getCookie: function(key) {
