@@ -5,7 +5,7 @@ angular.module('rugelach-cookie-wrap', [])
         return {
             setCookie: function (key, value, path, expir) {
 
-                //keyless therefore no cookie to store
+                //keyless therefore nothing to store
                 if(!key) {
                     return;
                 }
